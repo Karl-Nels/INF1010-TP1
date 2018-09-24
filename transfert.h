@@ -12,7 +12,9 @@ class Transfert {
     // Constructeurs
     Transfert();
     Transfert(double montant, Utilisateur* de, Utilisateur* pour);
-    
+
+	~Transfert();
+
     // Méthodes d'accès
     
     Utilisateur* getDonneur() ;

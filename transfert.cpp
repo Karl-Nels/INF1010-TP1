@@ -5,8 +5,14 @@ Transfert::Transfert(): montant_(0.0), donneur_(nullptr), receveur_(nullptr) {
 
 }
 
-Transfert::Transfert(double montant, Utilisateur* de, Utilisateur* pour) {
+Transfert::Transfert(double montant, Utilisateur* de, Utilisateur* pour): montant_(montant), donneur_(de)
+,receveur_(pour){
 
+}
+Transfert::~Transfert() {
+
+	delete donneur_;
+	delete receveur_;
 }
 
 Utilisateur* Transfert::getDonneur() {

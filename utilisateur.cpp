@@ -1,6 +1,6 @@
 #include "utilisateur.h"
 
-Utilisateur::Utilisateur(): nom_(""), tailleTabDepense_(5),nombreDepenses_(0),totalDepense_(0.0) {
+Utilisateur::Utilisateur(): nom_(" "), tailleTabDepense_(5),nombreDepenses_(0),totalDepense_(0.0) {
 
 	listeDepenses_ = new Depense*[tailleTabDepense_];
 
@@ -23,15 +23,18 @@ Utilisateur::~Utilisateur() {
 
 string Utilisateur::getNom() {
 
-
+	return nom_;
 }
 
 unsigned int Utilisateur::getNombreDepense() {
 	
+	
+	return nombreDepenses_;
 }
 
 double Utilisateur::getTotal() {
 
+	return totalDepense_;
 
 }
 
@@ -42,25 +45,23 @@ void Utilisateur::setNom(string& nom) {
 
 void Utilisateur::ajouterDepense(Depense* uneDepense) {
 
+	if (nombreDepenses_ == tailleTabDepense_) {
 
-	if (listeDepenses_[tailleTabDepense_ - 1] != nullptr) {
+		Depense** tmp = new Depense*[nombreDepenses_];
 
-		Depense** tmp = new Depense*[tailleTabDepense_];
-
-		for (unsigned i = 0; i < tailleTabDepense_; i++)
+		for (unsigned i = 0; i < nombreDepenses_; i++)
 			tmp[i] = listeDepenses_[i];
 
-		tailleTabDepense_++;
+		tailleTabDepense_ *= 2;
 
 		listeDepenses_ = new Depense*[tailleTabDepense_];
 
-		for (unsigned i = 0; i < tailleTabDepense_ - 1; i++)
+		for (unsigned i = 0; i < nombreDepenses_; i++)
 			tmp[i] = listeDepenses_[i];
 
-		listeDepenses_[tailleTabDepense_ - 1] = uneDepense;
+		listeDepenses_[nombreDepenses_++] = uneDepense;
 
 	}
-
 }
 
 void Utilisateur::calculerTotal() {

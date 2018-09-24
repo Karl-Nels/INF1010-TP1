@@ -1,6 +1,6 @@
 #include "depense.h"
 
-Depense::Depense(): titre_(" "), montant_(0.0) {
+Depense::Depense(): titre_("unknown"), montant_(0.0) {
 
 }
 
