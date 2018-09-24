@@ -96,7 +96,7 @@ void Groupe::ajouterUtilisateur(Utilisateur* unUtilisateur) {
 
 void Groupe::calculerTotalDepenses() {
 
-	int totalDepense_ = 0;
+	double totalDepense_ = 0.0;
 
 	for (unsigned i = 0; i < tailleTabDepenses_; i++)
 		totalDepense_ += listeDepenses_[i]->getMontant();
