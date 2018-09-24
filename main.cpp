@@ -1,3 +1,11 @@
+/****************************************************************************************************/
+/* Programme : TP1-Main.cpp                     						    */
+/*                                                                       			    */
+/* Objectif     : mettre en liens les differents programme, obtenir le resultat demandé             */
+/*                                                                    				    */
+/* Auteur    : Karl Nelson Somo 1859229 et Karl Dunkelmann 1893306 		                    */
+/* Date      : 23/09/2018                            					            */
+/****************************************************************************************************/
 
 #include <iostream>
 #include "groupe.h"
