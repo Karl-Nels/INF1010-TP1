@@ -1,3 +1,12 @@
+/****************************************************************************************************/
+/* Programme : TP1-Transfert.cpp                     						    */
+/*                                                                       			    */
+/* Objectif     : creer les classes et des differentes methodes  			            */
+/*                                                                    				    */
+/* Auteur    : Karl Nelson Somo 1859229 et Karl Dunkelmann 1893306 		                    */
+/* Date      : 23/09/2018                            					            */
+/****************************************************************************************************/
+
 #include "transfert.h"
 
 
