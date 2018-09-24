@@ -1,3 +1,14 @@
+/****************************************************************************************************/
+/* Programme : TP1-Groupe.cpp                     						    */
+/*                                                                       			    */
+/* Objectif     : creer les classes, les methodes ainsi que l'algorithme de transfert de fond       */
+/*                                                                    				    */
+/* Auteur    : Karl Nelson Somo 1859229 et Karl Dunkelmann 1893306 		                    */
+/* Date      : 23/09/2018                            					            */
+/****************************************************************************************************/
+
+
+
 #include "groupe.h"
 
 
